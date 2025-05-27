@@ -68,16 +68,6 @@ This will:
 
 ---
 
-## 🖼️ Preview
-
-> _Optional: Add an example image here once generated_
-
-```markdown
-![Energy vs Time](energy_vs_time.png)
-```
-
----
-
 ## 🧪 Notes
 
 - The script looks for lines containing `"E="` in the OSZICAR file to extract energy values.
