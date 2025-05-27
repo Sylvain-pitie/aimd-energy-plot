@@ -1,5 +1,5 @@
 
-# 📊 Plot OSZICAR: Energy vs Time
+# 📊 Plot Energy vs Time
 
 This Python script processes energy values from a VASP `OSZICAR` file and plots energy as a function of time. It is useful for analyzing molecular dynamics simulations by extracting clean energy trends over time, while filtering out unphysical noise.
 
@@ -46,7 +46,7 @@ python plot_oszicar.py --dt <time_step_fs> [--file <OSZICAR_file>] [--out <outpu
 ### Optional arguments:
 
 - `--file`: Path to the `OSZICAR` file (default: `OSZICAR`)
-- `--out`: Output image filename (default: `energy_vs_time_filtered.png`)
+- `--out`: Output image filename (default: `energy_vs_time.png`)
 
 ---
 
@@ -73,7 +73,7 @@ This will:
 > _Optional: Add an example image here once generated_
 
 ```markdown
-![Energy vs Time](energy_vs_time_filtered.png)
+![Energy vs Time](energy_vs_time.png)
 ```
 
 ---
@@ -82,13 +82,7 @@ This will:
 
 - The script looks for lines containing `"E="` in the OSZICAR file to extract energy values.
 - If you want to analyze a different time window or change the outlier filtering strategy, you can modify the script.
-- Currently, the script removes the top 4 maximum values in the selected window to clean noise. You can replace this with statistical outlier detection if needed.
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**. Feel free to use, modify, and distribute.
 
 ---
 
