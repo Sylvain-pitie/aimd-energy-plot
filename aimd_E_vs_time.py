@@ -30,7 +30,7 @@ with open(input_file, 'r') as f:
         if "E=" in line:
             try:
                 parts = line.split()
-                e_index = parts.index("E=")
+                e_index = parts.index("F=")
                 energy = float(parts[e_index + 1])
                 energies.append(energy)
             except (ValueError, IndexError):
